@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Descarga la app</title>
+  <script>
+    const userAgent = navigator.userAgent || navigator.vendor;
+
+    if (/android/i.test(userAgent)) {
+      window.location.href = "TU_LINK_DE_PLAY_STORE";
+    } else if (/iPad|iPhone|iPod/.test(userAgent)) {
+      window.location.href = "TU_LINK_DE_APP_STORE";
+    } else {
+      // Desktop: puedes poner tu web o cualquier link
+      window.location.href = "TU_LINK_DE_PLAY_STORE";
+    }
+  </script>
+</head>
+<body>
+  <p>Redirigiendo a la tienda...</p>
+</body>
+</html>
