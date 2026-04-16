@@ -5,6 +5,8 @@
   <title>Descarga la app</title>
   <script>
     const userAgent = navigator.userAgent || navigator.vendor;
+    const isIOS = /iPad|iPhone|iPod/.test(userAgent) ||
+                  (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
 
     if (/android/i.test(userAgent)) {
       window.location.href = "https://play.google.com/store/apps/details?id=com.chillngo.tourist&pcampaignid=web_share";
